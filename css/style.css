@@ -1,14 +1,93 @@
-@import "./global/global.css";
-@import "./utilidades/tipografia.css";
+/* reset */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 
-@import "./global/header.css";
+/* menu */
+.header-bg {
+  background: #000;
+}
 
-/* utilidades */
-@import "./utilidades/componestes.css";
-@import "./utilidades/cores.css";
+.header {
+  margin: 0 auto;
+  max-width: 1200px;
+  /* soma os vlaores de width com padding, totalizando 20 de padding mais 1160 1200px */
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap aq para n grudar na hora q estiver diminuindo a viewport */
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
 
-/* home */
-@import "./home/introducao.css";
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
 
-/* bicicletas */
-@import "./bicicletas/bicicletas-lista.css";
+.header-menu a {
+  /* colocando o inline pq com o paddind na hora de quebrar quebra certinho por conta do padding */
+  display: inline-block;
+  padding: 16px 0px;
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  margin-top: 4px;
+  transition: 0.3s;
+  /* sem o position: absolute; vai somar mais o valor do elemento dentro do block, ocasionando nm pequeno desalinhamento */
+  position: absolute;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+/* mobile */
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 20px;
+  }
+
+  .header-menu a {
+    background: #111;
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+  .header-menu a:hover {
+    background-color: #2e2e2e;
+  }
+
+  .header a::after {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .header-menu {
+      gap: 12px;
+    }
+    .header-menu a {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }
+}
