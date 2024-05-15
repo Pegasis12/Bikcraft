@@ -27,11 +27,12 @@ img {
 }
 
 .header {
-  margin: 0 auto;
   max-width: 1200px;
   /* soma os vlaores de width com padding, totalizando 20 de padding mais 1160 1200px */
   box-sizing: border-box;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   flex-wrap: wrap;
   /* gap aq para n grudar na hora q estiver diminuindo a viewport */
   gap: 20px;
@@ -110,6 +111,12 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .introducao-conteudo {
@@ -123,9 +130,30 @@ img {
   line-height: 1.125;
 }
 
+.introducao h1 span {
+  color: #ffbb00;
+}
+
 .introducao p {
   margin-bottom: 20px;
   font-size: 24px;
   line-height: 1.5;
   color: #b2b2b2;
+}
+
+.introducao a {
+  padding: 16px 32px;
+  display: inline-block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #332200;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: bold;
+}
+
+.introducao a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
 }
