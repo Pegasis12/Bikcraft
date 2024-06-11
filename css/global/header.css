@@ -28,10 +28,7 @@
   /* colocando o inline pq com o paddind na hora de quebrar quebra certinho por conta do padding */
   display: inline-block;
   padding: 16px 0px;
-  font-size: 18px;
   position: relative;
-  font-family: "Poppins";
-  font-weight: 400;
 }
 
 .header-menu a::after {
