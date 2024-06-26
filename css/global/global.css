@@ -5,6 +5,7 @@ body {
   color: #111111;
   padding-bottom: 600px;
 }
+
 h1,
 ul,
 h3,
@@ -13,15 +14,23 @@ h4,
 p {
   margin: 0px;
 }
+
 ul {
   padding: 0;
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 img {
   max-width: 100%;
   display: block;
+}
+
+/* atribui ao final de um arquivo jpg a borda de 4px, fazendo com que arquivos diferentes como svg não pegue essa atribuição */
+img[src$=".jpg"]{
+  border-radius: 4px;
 }
