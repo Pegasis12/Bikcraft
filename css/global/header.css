@@ -4,18 +4,13 @@
 }
 
 .header {
-  max-width: 1200px;
-  /* soma os vlaores de width com padding, totalizando 20 de padding mais 1160 1200px */
-  box-sizing: border-box;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   flex-wrap: wrap;
-  /* gap aq para n grudar na hora q estiver diminuindo a viewport */
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-menu {
