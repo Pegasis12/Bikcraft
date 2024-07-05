@@ -1,0 +1,91 @@
+.tecnologia-bg {
+  background-color: var(--cor-11);
+  /* negativo no px vai para parte de baixo */
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
+}
+
+.tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.tecnologia-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.tecnologia-conteudo {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+/* se usa > para falar diretamente com o proximo elemento dentro da classe,sendo assim não pega os demais depois dele */
+.tecnologia-conteudo > span {
+  margin-bottom: 20px;
+  /* sempre colocando display block em elementos inline para pegar as configuracoes */
+  display: block;
+}
+
+.tecnologia-conteudo h2 {
+  margin-bottom: 32px;
+}
+
+.tecnologia-conteudo > p {
+  margin-bottom: 32px;
+}
+
+.tecnologia a {
+  margin-bottom: 80px;
+}
+
+.tecnologia-vantagens {
+  display: flex;
+  gap: 40px;
+}
+
+.tecnologia-vantagens h3 {
+  margin-bottom: 8px;
+}
+
+.tecnologia-vantagens h3 {
+  margin-bottom: 8px;
+  /* faz com que as letras não quebrem */
+  width: max-content;
+}
+
+.tecnologia-vantagens img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 800px) {
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
+
+  .tecnologia-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .tecnologia-bg {
+    box-shadow: initial;
+  }
+
+  .tecnologia-imagem {
+    display: none;
+  }
+
+  .tecnologia a {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .tecnologia-vantagens {
+    /* coloca o flex em coluna e não em linha */
+    flex-direction: column;
+  }
+}
