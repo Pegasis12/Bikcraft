@@ -1,0 +1,39 @@
+.vantagens-bg {
+  /* uma solucao de responsivo para não ficar trocando o padding todo momento quando a tela diminuir é criar variaveis e só mudar elas na media, exemplo abaixo e apos na media, lembrando de criar a variavel no elemento pai */
+  --padding: 120px;
+  background-color: var(--cor-12);
+}
+
+.vantagens {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+.vantagens h2 {
+  margin-bottom: 60px;
+}
+
+.vantagens ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px 80px;
+}
+
+.vantagens h3,
+.vantagens img {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 800px) {
+  .vantagens-bg {
+    --padding: 60px;
+  }
+
+  .vantagens h2 {
+    margin-bottom: 40px;
+  }
+
+  .vantagens ul {
+    gap: 20px;
+  }
+}
