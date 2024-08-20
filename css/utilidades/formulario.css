@@ -1,0 +1,50 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form label {
+  /* lembrando que o displayblock da razão para se tornar um elemento "normal" */
+  display: block;
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
+}
+
+.form .col-2 {
+  /*Span serve só para especificar quantas colunas o elemento vai ocupar*/
+  grid-column: span 2;
+}
+
+/* importante dizer qual input vc vai estilizar pois existe diversos, para isso sempre se usa o seletor */
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  padding: 12px;
+  border-radius: 4px;
+  /* vai cola comoutro elemento pois esta somando o padding, para resolver, box-sizing */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--cor-p1);
+  background: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .form .col-2 {
+    grid-column: 1;
+  }
+}
