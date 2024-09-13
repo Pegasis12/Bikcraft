@@ -4,15 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <!-- faz cm que o css carregue antes de qualquer coisa -->
-  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
   <title>Bikcraft - Bicicletas Elétricas</title>
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida patra o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- maneira usada para caso o navegador não carregue o js, a logica por tras é se o existir add a classe js no html e o css só roda as animacoes caso a classe seja atribuida, se o navegador não carregar a classe não é atribuida e as animações são canceladas -->
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -35,11 +37,11 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl cor-0">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
-        <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida patra o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <a class="botao" href="./bicicletas.html">ESCOLHA A SUA</a>
+        <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
+        <p class="font-2-l cor-5 fadeInDown" data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida patra o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a class="botao fadeInDown" href="./bicicletas.html" data-anime="600">ESCOLHA A SUA</a>
       </div>
-      <picture>
+      <picture data-anime="800" class="fadeInDown">
         <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
         <img src="./Img/fotos/introducao.jpg" width="1280" height="1600" alt="bicicleta eletrica preta">
       </picture>
@@ -199,6 +201,7 @@
       <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados</p>
     </div>
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
