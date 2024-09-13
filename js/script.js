@@ -56,6 +56,7 @@ function trocarImagem(event) {
   const img = event.currentTarget;
   const media = matchMedia("(min-width: 1000px)").matches;
   if (media) {
+    // metodo prepend faz com que o elemento em si mude a sequencia para primeiro, ent pela logica caso o usuario click no evento de click na imaem o prepend vai agir para colocar a imagem clicada em primeiro
     galeriaContainer.prepend(img);
   }
 }
