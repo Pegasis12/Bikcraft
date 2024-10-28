@@ -26,13 +26,13 @@ a {
   color: inherit;
 }
 
-img {
+Img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
 /* atribui ao final de um arquivo jpg a borda de 4px*/
-img[src$=".jpg"] {
+Img[src$=".jpg"] {
   border-radius: 4px;
 }

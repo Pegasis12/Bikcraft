@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.depoimento img {
+.depoimento Img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -15,8 +15,8 @@
 .depoimento-conteudo {
   padding: 40px 40px 80px 80px;
   align-self: end;
-  background: url('../../Img/dec/bottom-right-p.svg') no-repeat
-  bottom 40px right 40px;
+  background: url("../../Img/dec/bottom-right-p.svg") no-repeat bottom 40px
+    right 40px;
 }
 
 .depoimento-conteudo p {
@@ -46,11 +46,10 @@
 }
 
 @media (min-width: 1200px) {
-  .depoimento img{
+  .depoimento Img {
     max-height: 520px;
   }
 }
-
 
 @media (max-width: 800px) {
   .depoimento {
@@ -58,7 +57,7 @@
     text-align: center;
   }
 
-  .depoimento img {
+  .depoimento Img {
     max-height: 200px;
   }
 

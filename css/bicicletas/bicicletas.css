@@ -12,15 +12,14 @@
   gap: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
-  background: url('../../Img/dec/top-right.svg') no-repeat
-  top 40px right 20px;
+  background: url("../../Img/dec/top-right.svg") no-repeat top 40px right 20px;
 }
 
-.bicicletas-img {
+.bicicletas-Img {
   position: relative;
 }
 
-.bicicletas-img span {
+.bicicletas-Img span {
   background: var(--cor-12);
   padding: 8px 16px 8px 8px;
   border-radius: 4px 0 0 4px;
@@ -71,7 +70,7 @@
   margin-top: 16px;
 }
 
-.bicicletas-conteudo img {
+.bicicletas-conteudo Img {
   width: 24px;
   margin-right: 8px;
 }
