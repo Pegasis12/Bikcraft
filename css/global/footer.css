@@ -27,11 +27,9 @@
   gap: 32px;
 }
 
-/* linha somente no elemento 2 e 4 da li */
 .footer-contato li:nth-child(even):after {
   content: "";
   display: block;
-  /* max pega o tamanho maximo do pixel q eu escolhi, em crescer junto com container e dimunidno junto com o mesmo */
   max-width: 360px;
   height: 2px;
   background: var(--cor-11);

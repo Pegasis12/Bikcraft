@@ -17,13 +17,11 @@
   gap: 20px;
 }
 
-/* faz com que as imagens se tiver espaco tenha o minimo 200px */
 .bicicleta-imagens img {
   flex: 1;
   min-width: 200px;
 }
 
-/* coloca a primeira imagem ocupando 100% do container */
 .bicicleta-imagens img:first-child {
   min-width: 100%;
 }

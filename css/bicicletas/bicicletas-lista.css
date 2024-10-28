@@ -1,4 +1,3 @@
-/* padding não tem problema de colisão, ja a margin sim */
 .bicicletas-lista {
   padding-top: 60px;
   padding-bottom: 120px;
@@ -14,7 +13,6 @@
   padding: 0px 20px 20px 20px;
   max-width: 1440px;
   margin: 0 auto;
-  /* serve para quando um copntainer estourar ele criar uma barra de rolagem sem danificar outros container do site */
   overflow-x: auto;
 }
 
@@ -23,7 +21,6 @@
 }
 
 .bicicletas-lista li {
-  /* não diminui menos que 280px */
   flex: 1;
   min-width: 280px;
 }

@@ -10,7 +10,6 @@
 }
 
 .seguro-imagem img {
-  /* para não deixar a imagem menor que o conteudo ao lado, deve-se usar o object fit cover para n perder qualidade de imagem */
   width: 100%;
   height: 100%;
   object-fit: cover;

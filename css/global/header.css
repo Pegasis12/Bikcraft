@@ -20,7 +20,6 @@
 }
 
 .header-menu a {
-  /* colocando o inline pq com o paddind na hora de quebrar quebra certinho por conta do padding */
   display: inline-block;
   padding: 16px 0px;
   position: relative;
@@ -34,7 +33,6 @@
   background: var(--cor-0);
   margin-top: 4px;
   transition: 0.3s;
-  /* sem o position: absolute; vai somar mais o valor do elemento dentro do block, ocasionando nm pequeno desalinhamento */
   position: absolute;
 }
 

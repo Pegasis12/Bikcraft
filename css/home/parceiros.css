@@ -25,13 +25,11 @@
   margin: auto;
 }
 
-/* fir primeiro item, nth escolhe o item em especifico */
 .parceiros li:first-child,
 .parceiros li:nth-child(5) {
   border-left: none;
 }
 
-/* a partir do zero ate o 5 pega borda top */
 .parceiros li:nth-child(n + 5) {
   border-top: 2px solid var(--cor-2);
 }

@@ -1,5 +1,4 @@
 .vantagens-bg {
-  /* uma solucao de responsivo para não ficar trocando o padding todo momento quando a tela diminuir é criar variaveis e só mudar elas na media, exemplo abaixo e apos na media, lembrando de criar a variavel no elemento pai */
   --padding: 120px;
   background-color: var(--cor-12);
 }

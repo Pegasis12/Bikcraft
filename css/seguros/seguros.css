@@ -42,7 +42,6 @@
   margin-bottom: 32px;
 }
 
-/* so adiciona margin top em elementos seguido de li, n somando com outro elemento q n é li */
 
 .seguros-item li {
   display: flex;

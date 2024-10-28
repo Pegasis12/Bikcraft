@@ -32,7 +32,7 @@ img {
   display: block;
 }
 
-/* atribui ao final de um arquivo jpg a borda de 4px, fazendo com que arquivos diferentes como svg não pegue essa atribuição */
+/* atribui ao final de um arquivo jpg a borda de 4px*/
 img[src$=".jpg"] {
   border-radius: 4px;
 }

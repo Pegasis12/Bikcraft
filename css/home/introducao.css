@@ -16,7 +16,6 @@
 }
 
 .introducao img {
-  /* objet fit cover faz com que a imagem não distorça, ela vai se cortando */
   width: 100%;
   object-fit: cover;
   height: 100%;

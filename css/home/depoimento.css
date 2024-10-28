@@ -2,14 +2,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--cor-p1);
-  /* se quebra o container vai escopnder os itens sem criar barra de escrol por baixo*/
   overflow: hidden;
 }
 
 .depoimento img {
   width: 100%;
   height: 100%;
-  /* lembrando que é so para imagem que pode ser cortada */
   object-fit: cover;
   border-radius: 0px;
 }
@@ -22,7 +20,6 @@
 }
 
 .depoimento-conteudo p {
-  /* limite de carcter ch */
   max-width: 32ch;
   font-family: "Merriweather" serif;
   font-style: italic;
@@ -48,7 +45,6 @@
   content: "”";
 }
 
-/* so cima de 1200 */
 @media (min-width: 1200px) {
   .depoimento img{
     max-height: 520px;
