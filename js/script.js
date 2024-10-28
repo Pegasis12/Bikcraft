@@ -14,11 +14,11 @@ function ativarLink(link) {
 links.forEach(ativarLink);
 
 //ativar itens do orçamento
-// location acompanhado com .serach pega os parametros que estão no link da url, a classe URLSearchParams pega esses parametros sem precisa manipular a String, mas a classe precisa acompanhar o new antes e dentro do parametro a string no caso o location.search
+// location acompanhado com .serach pega os parametros que estão no link da url, a classe URLSearchParams pega esses parametros sem precisar manipular a String, mas a classe precisa acompanhar o new antes e dentro do parametro a string no caso o location.search
 const parametros = new URLSearchParams(location.search);
 
 function ativarProduto(parametro) {
-  // elemento pega o id qu o parametro esta atribuido
+  // elemento pega o id que o parametro esta atribuido
   const elemento = document.getElementById(parametro);
   // if verifica se o parametro existe, se existir mais de um ou algo rolar ele não da erro e retorna null
   if (elemento) {
@@ -48,7 +48,7 @@ function EventosPergunta(pergunta) {
 
 perguntas.forEach(EventosPergunta);
 
-//galeria de imagens biciletas
+//galeria de imagens bicicletas
 const galeria = document.querySelectorAll(".bicicleta-imagens Img");
 const galeriaContainer = document.querySelector(".bicicleta-imagens");
 
@@ -56,7 +56,7 @@ function trocarImagem(event) {
   const Img = event.currentTarget;
   const media = matchMedia("(min-width: 1000px)").matches;
   if (media) {
-    // metodo prepend faz com que o elemento em si mude a sequencia para primeiro, ent pela logica caso o usuario click no evento de click na imaem o prepend vai agir para colocar a imagem clicada em primeiro
+    // metodo prepend faz com que o elemento em si mude a sequencia para primeiro, ent pela logica caso o usuario click no evento de click na imagem o prepend vai agir colocando a imagem clicada em primeiro
     galeriaContainer.prepend(Img);
   }
 }
